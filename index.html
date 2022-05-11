@@ -4,16 +4,28 @@
         <meta charset="utf-8">
         <title>Validador de CPF</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
     </head>
 
-    <body>
-        <h1>Validador de CPF</h1>
+    <body class="l-body">
+        <header class="l-header">
+            <div class="c-container l-header__container">
+                <h1 class="c-title">Validador de CPF</h1>
+            </div>
+        </header>
 
-        <form>
-            <label for="cpf">CPF</label>
-            <input type="text" required placeholder = "999999999" maxlength="10">
-            <span>Digite apenas números</span>
-            <button>Validar</button>
-        </form>
+        <div class="c-container">
+            <form class="c-form">
+                <div class="c-form__input">
+                    <label class="c-form__label" for="cpf">CPF</label>
+                    <input class="c-form__field" type="text" id="cpf" required placeholder = "Digite o CPF para validação..." maxlength="10">
+                </div>
+                <span class="c-form__warning" >Digite apenas números</span>
+                <button class="c-button">Validar</button>
+            </form>
+        </div>
     </body>
 </html>
