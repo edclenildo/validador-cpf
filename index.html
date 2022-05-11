@@ -21,11 +21,20 @@
             <form class="c-form">
                 <div class="c-form__input">
                     <label class="c-form__label" for="cpf">CPF</label>
-                    <input class="c-form__field" type="text" id="cpf" required placeholder = "Digite o CPF para validação..." maxlength="10">
+                    <input class="c-form__field js-cpf" type="text" id="cpf" required placeholder = "Digite o CPF para validação..." maxlength="10">
                 </div>
                 <span class="c-form__warning" >Digite apenas números</span>
-                <button class="c-button">Validar</button>
+                <button class="c-button" type="button" onclick="validar()">Validar</button>
             </form>
+
+            <div class="c-alert c-alert--sucess js-sucess">
+                <strong>Oba!</strong> seu CPF é válido
+            </div>
+
+            <div class="c-alert c-alert--error js-error">
+                <strong>Ops!</strong> seu CPF não é válido
+            </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

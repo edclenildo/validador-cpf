@@ -82,3 +82,21 @@
     padding: 8px 16px;
     cursor: pointer;
 }
+
+.c-alert {
+    padding: 16px;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+.c-alert--sucess {
+    border: solid 1px rgb(4, 160, 4);
+    color: rgb(4, 160, 4);
+    display: none;
+}
+
+.c-alert--error {
+    border: solid 1px rgb(160, 14, 4);
+    color: rgb(160, 14, 4);
+    display: none;
+}
